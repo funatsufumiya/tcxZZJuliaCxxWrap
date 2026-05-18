@@ -59,4 +59,4 @@ if(WIN32 AND MSVC)
 endif()
 
 target_link_libraries(${ADDON_NAME} PUBLIC TrussC)
-target_link_libraries(${SHARED_LIB_NAME} PUBLIC TrussC tcxHap tcxOsc JlCxx::cxxwrap_julia JlCxx::cxxwrap_julia_stl)
+target_link_libraries(${SHARED_LIB_NAME} PUBLIC TrussC tcxHap tcxOsc tcxObj tcxGltf JlCxx::cxxwrap_julia JlCxx::cxxwrap_julia_stl)

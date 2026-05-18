@@ -2,6 +2,8 @@
 #include "TrussC.h"
 #include "tcxHapPlayer.h"
 #include "tcxOsc.h"
+#include "tcxObj.h"
+#include "tcxGltf.h"
 
 #include "JlTrussC.h"
 
@@ -2076,8 +2078,8 @@ JLCXX_MODULE define_julia_module(jlcxx::Module& mod)
       .method("clip", &SoundBuffer::clip)
       ;
 
-  mod.method("getAdtsSampleRateIndex", &SoundBuffer::getAdtsSampleRateIndex);
-  mod.method("createAdtsHeader", &SoundBuffer::createAdtsHeader);
+  mod.method("SoundBuffer_getAdtsSampleRateIndex", &SoundBuffer::getAdtsSampleRateIndex);
+  mod.method("SoundBuffer_createAdtsHeader", &SoundBuffer::createAdtsHeader);
 
   mod.add_type<AudioEngine>("AudioEngine")
       .method("init", &AudioEngine::init)

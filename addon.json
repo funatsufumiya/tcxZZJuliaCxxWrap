@@ -3,5 +3,5 @@
   "author": "Fumiya Funatsu",
   "license": "MIT",
   "keywords": ["language"],
-  "dependencies": ["tcxHap", "tcxOsc"]
+  "dependencies": ["tcxHap", "tcxOsc", "tcxObj", "tcxGltf"]
 }
